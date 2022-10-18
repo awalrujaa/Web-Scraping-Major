@@ -1,0 +1,37 @@
+<a class="nova-legacy-c-nav__item is-selected" 
+aria-disabled="false" aria-current="page" role="menuitem" 
+href="profile/Basanta-Joshi/research?ev=brs_act" 
+tabindex="-1"><div><div class="nova-legacy-e-text 
+nova-legacy-e-text--size-m nova-legacy-e-text--family-sans-serif nova-legacy-e-text--spacing-none
+ nova-legacy-e-text--color-inherit nova-legacy-c-nav__item-label">Research (57)</div></div></a>
+
+
+
+<button class="nova-legacy-c-nav__item js-lite-click" 
+aria-disabled="false" role="menuitem" type="button" data-lite="{&quot;click&quot;:
+[{&quot;t&quot;:&quot;.js-target-research-section&quot;,&quot;a&quot;:&quot;st(64)&
+
+quot;,&quot;d&quot;:100},{&quot;t&quot;:&quot;.js-target-profileHeader .is-selected
+&quot;,&quot;a&quot;:&quot;rc(is-selected)&quot;},{&quot;t&quot;:&quot;self&quot;,
+&quot;a&quot;:&quot;ac(is-selected)&quot;}]}"><div><div class="nova-legacy-e-text 
+nova-legacy-e-text--size-m nova-legacy-e-text--family-sans-serif nova-legacy-e-text-
+-spacing-none nova-legacy-e-text--color-inherit nova-legacy-c-nav__item-label">
+<a class="nova-legacy-e-link nova-legacy-e-link--color-inherit nova-legacy-e-link--theme-silent" 
+href="profile/Basanta-Joshi#publications">Publications <span class="nova-legacy-e-badge 
+nova-legacy-e-badge--color-blue nova-legacy-e-badge--display-inline nova-legacy-e-badge--
+luminosity-medium nova-legacy-e-badge--size-m nova-legacy-e-badge--theme-ghost nova-legacy-
+e-badge--radius-full">57</span></a></div></div></button>
+
+
+
+<div class="nova-legacy-e-text nova-legacy-e-text--size-l nova-legacy-e-text--family-display 
+nova-legacy-e-text--spacing-none nova-legacy-e-text--color-inherit nova-legacy-v-publication-item__title"
+ itemprop="headline">
+<a class="nova-legacy-e-link nova-legacy-e-link--color-inherit nova-legacy-e-link--theme-bare" 
+href="https://www.researchgate.net/publication/359879559_Performance_Analysis_of_Shard_Selection_Techniques_on_Elasticsearch">
+Performance Analysis of Shard Selection Techniques on Elasticsearch</a></div>
+
+
+
+class name
+nova-legacy-v-publication-item__title
