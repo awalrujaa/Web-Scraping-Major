@@ -18,41 +18,39 @@ var list_of_href = [];
     console.log("displayed!");
     await driver.wait(until.elementLocated(By.css('a.gsc_a_at')), 10000);
     await driver.sleep(5000);
-    let elements = await driver.findElements(By.css("a.gsc_a_at"));
+    let publications = await driver.findElements(By.css("a.gsc_a_at"));
 
-    for(let e of elements) {
+    for(let publication of publications) {
         // console.log(await e.getText());
-        list_of_Publication.push(await e.getText());
-        list_of_href.push(await e.getAttribute('href'));
+        list_of_Publication.push(await publication.getText());
+        list_of_href.push(await publication.getAttribute('href'));
     }
 
 
     
-    console.log(list_of_href);
+    //console.log(list_of_href);
     for (let url of list_of_href){
         await driver.get(url);
-        console.log(url);
-        //await driver.manage().setTimeouts( { implicit: 10000 } );
+        //console.log(url);
+        await driver.manage().setTimeouts( { implicit: 10000 } );
+        let elements = await driver.findElements(By.css("div.gsc_oci_field"));
+        var dict_of_citation = {};
+        let i = 0;
+        for( element of elements){
+            let x = await driver.findElements(By.css("div.gsc_oci_value"));
+            dict_of_citation[await element.getText()] = await x[i].getText();
+            i = i+1;
+            delete dict_of_citation['Description'];
+            delete dict_of_citation['Total citations'];
+            delete dict_of_citation['Scholar articles'];
+            
+        }
+        console.log(dict_of_citation);
+
+
         
-    }
+   }
     
-    // for href in list_of_href:
-    // driver.get(href)
-    // driver.implicitly_wait(10)
-    // elements = driver.find_elements(By.CSS_SELECTOR, "div.gsc_oci_field")
-    // i=0
-    // for element in elements:
-    //     dict_of_citation[element.text] = driver.find_elements(By.CSS_SELECTOR, "div.gsc_oci_value")[i].text
-    //     i=i+1
-    // dict_of_citation.pop('Description',None)
-    // dict_of_citation.pop('Total citations',None)
-    // dict_of_citation.pop('Scholar articles',None)
-    // print(dict_of_citation)
-    // print(""".
-    // .""")
-    // list_of_dict.append(dict_of_citation)
-
-
 
 })();
 
