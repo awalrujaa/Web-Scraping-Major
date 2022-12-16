@@ -38,6 +38,8 @@ var list_of_href = [];
         let i = 0;
         for( element of elements){
             let x = await driver.findElements(By.css("div.gsc_oci_value"));
+            dict_of_citation['Title'] = await driver.findElement(By.css("a.gsc_oci_title_link")).getText();
+            dict_of_citation['URL'] = await driver.findElement(By.css("a.gsc_oci_title_link")).getAttribute('href');
             dict_of_citation[await element.getText()] = await x[i].getText();
             i = i+1;
             delete dict_of_citation['Description'];
